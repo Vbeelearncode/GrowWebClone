@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
     <title>Homepage</title>
 </head>
 <body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul id="nav-left">
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Tính năng</a></li>
+            <li><a href="#">Ứng dụng</a></li>
+            <li><a href="#">Bình luận</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <ul id="nav-right">
+            <li class="right">
+                <form action="#">
+                  <select id="language" name="language">
+                    <option value="vi">VIE</option>
+                    <option value="en">ENG</option>
+                  </select>
+                </form>
+              </li>
+            <li class="right" id="mobileApp">
+                <div>
+                  <span>TẢI APP NGAY</span>
+                </div>
+              </li>
+        </ul>
+    </nav>
+    <!-- End of Navigation bar -->
+    
+    <!-- Display company logo over a forest background -->
+    <div id="Logo-block">
+        <div id="Logo">
+            <img src="imgs/logo.png" alt="Logo">
+        </div>
+    </div>    
+    <!-- End of Display company logo over a forest background -->
+    
+    <!-- About us -->
+    <div>
+        <h1>Về chúng tôi</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt maxime, recusandae ex ipsa, soluta quos veniam modi similique impedit distinctio accusantium eum necessitatibus culpa laboriosam. Sed consequuntur adipisci quis delectus.
+        A, laudantium vel accusamus est consequatur ratione provident doloremque quas repellendus placeat quasi illum quaerat recusandae ullam cumque neque optio quo suscipit? Ipsam error fuga numquam id laboriosam labore distinctio!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla eligendi eaque, nostrum quasi iure error nesciunt at in reiciendis, unde libero aliquid consequuntur laborum, </p>
+        <img src="man-running.jpg" alt="Image of a man running">
+    </div>
     
 </body>
 </html>
