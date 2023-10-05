@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
 
@@ -26,12 +30,22 @@
       </ul>
       <ul id="nav-right">
         <li class="right">
-          <form action="#">
-            <select id="language" name="language">
-              <option value="vi">VIE</option>
-              <option value="en">ENG</option>
-            </select>
-          </form>
+          <div id="language-dropdown">
+            <div class="selected-language" onclick="toggleLanguageList()">
+              <span class="flag-icon fi fi-vn"></span>
+              <span class="language-name"> VIE</span>
+            </div>
+            <ul class="language-list">
+              <li onclick="selectLanguage('vn', 'VIE')">
+                <span class="flag-icon fi fi-vn"></span>
+                <span class="language-name">VIE</span>
+              </li>
+              <li onclick="selectLanguage('gb', 'ENG')">
+                <span class="flag-icon fi fi-gb"></span>
+                <span class="language-name">ENG</span>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="right" id="mobileApp">
           <div>
@@ -259,18 +273,22 @@
           <img src="imgs/logo.png" alt="Logo" />
         </div>
         <div id="footer-contact">
+          <h2>Công ty trách nhiệm hữu hạn GROW</h2>
           <p>
             <i class="fa-solid fa-map-marker-alt"></i>
             Địa chỉ: Số 9, Đường 7A, P. Tăng Nhơn Phú B, Q.9
           </p>
           <p>
             <i class="fa-solid fa-phone"></i>
-            ĐT: 1234567891
+            ĐT: 1234 567 891
           </p>
           <p>
             <i class="fa-solid fa-envelope"></i>
             Email: grow.contact@support.com
           </p>
+          <br />
+          <p>Hotline: 1234 567 891</p>
+          <p>MST: 123456789</p>
         </div>
       </div>
       <div id="footer-right">
@@ -278,14 +296,23 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aut
           tempora eligendi fuga sit odio quasi, ipsum blanditiis ipsa officiis,
           illum cum nulla modi fugiat voluptas repudiandae numquam facere.
-          Rerum?
+          Rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Temporibus magni nam perspiciatis, adipisci, obcaecati totam
+          architecto sequi consequuntur fugiat debitis placeat officia dicta!
+          Autem distinctio doloribus veniam labore blanditiis quibusdam. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti
+          quibusdam consequuntur debitis laborum perspiciatis est vel
+          dignissimos, cupiditate laboriosam soluta iusto sit similique. Neque
+          obcaecati optio rerum et molestias.
         </p>
-
+        <div id="footer-download">
+          <img src="imgs/google-play-badge.png" alt="" />
+          <img src="imgs/appstore-badge.svg" alt="" />
+        </div>
         <div id="footer-social">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <img src="imgs/facebook-icon.webp" alt="" />
+          <img src="imgs/zalo-icon.webp" alt="" />
+          <img src="imgs/instagram-icon.webp" alt="" />
         </div>
       </div>
     </footer>
@@ -294,5 +321,6 @@
       src="https://kit.fontawesome.com/c498f18423.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
