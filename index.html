@@ -1,98 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Homepage</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation bar -->
     <nav>
-        <ul id="nav-left">
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Tính năng</a></li>
-            <li><a href="#">Ứng dụng</a></li>
-            <li><a href="#">Bình luận</a></li>
-            <li><a href="#">Liên hệ</a></li>
-        </ul>
-        <ul id="nav-right">
-            <li class="right">
-                <form action="#">
-                  <select id="language" name="language">
-                    <option value="vi">VIE</option>
-                    <option value="en">ENG</option>
-                  </select>
-                </form>
-              </li>
-            <li class="right" id="mobileApp">
-                <div>
-                  <button id="first-button">TẢI APP NGAY <span class="icon"><i class="fa-brands fa-android"></i></span> <span class="icon"><i class="fa-brands fa-apple"></i></span></button>
-                </div>
-              </li>
-        </ul>
+      <ul id="nav-left">
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Tính năng</a></li>
+        <li><a href="#">Ứng dụng</a></li>
+        <li><a href="#">Bình luận</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+      <ul id="nav-right">
+        <li class="right">
+          <form action="#">
+            <select id="language" name="language">
+              <option value="vi">VIE</option>
+              <option value="en">ENG</option>
+            </select>
+          </form>
+        </li>
+        <li class="right" id="mobileApp">
+          <div>
+            <button id="first-button">
+              TẢI APP NGAY
+              <span class="icon"><i class="fa-brands fa-android"></i></span>
+              <span class="icon"><i class="fa-brands fa-apple"></i></span>
+            </button>
+          </div>
+        </li>
+      </ul>
     </nav>
     <!-- End of Navigation bar -->
-    
+
     <!-- Display company logo over a forest background -->
     <div id="Logo-block">
-        <div id="Logo">
-            <img src="imgs/logo.png" alt="Logo">
-        </div>
-    </div>    
+      <div id="Logo">
+        <img src="imgs/logo.png" alt="Logo" />
+      </div>
+    </div>
     <!-- End of Display company logo over a forest background -->
-    
+
     <!-- About us -->
     <div id="aboutUs">
-        <div id="aboutUsText">
+      <div id="aboutUsText">
         <h1>Về chúng tôi</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt maxime, recusandae ex ipsa, soluta quos veniam modi similique impedit distinctio accusantium eum necessitatibus culpa laboriosam. Sed consequuntur adipisci quis delectus.
-        A, laudantium vel accusamus est consequatur ratione provident doloremque quas repellendus placeat quasi illum quaerat recusandae ullam cumque neque optio quo suscipit? Ipsam error fuga numquam id laboriosam labore distinctio!</p>
-        <br>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla eligendi eaque, nostrum quasi iure error nesciunt at in reiciendis, unde libero aliquid consequuntur laborum, </p>
-    </div>
-        <img src="imgs/man-running.jpg" alt="Image of a man running">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          maxime, recusandae ex ipsa, soluta quos veniam modi similique impedit
+          distinctio accusantium eum necessitatibus culpa laboriosam. Sed
+          consequuntur adipisci quis delectus. A, laudantium vel accusamus est
+          consequatur ratione provident doloremque quas repellendus placeat
+          quasi illum quaerat recusandae ullam cumque neque optio quo suscipit?
+          Ipsam error fuga numquam id laboriosam labore distinctio!
+        </p>
+        <br />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+          eligendi eaque, nostrum quasi iure error nesciunt at in reiciendis,
+          unde libero aliquid consequuntur laborum,
+        </p>
+      </div>
+      <img src="imgs/man-running.jpg" alt="Image of a man running" />
     </div>
     <!-- End of About us -->
 
     <!-- Our features -->
     <div id="feature">
-        <h1>tính năng tiện lợi</h1>
-        <p id="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum itaque necessitatibus ea adipisci optio provident, exercitationem architecto accusamus odit maiores harum rerum quam eveniet distinctio.</p>
-        <div id="feature-list">
-            <div class="feature-item">
-                <img src="imgs/cat1.jpg" alt="">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam facilis dolorem, tempore iure cumque dolore dolores eaque soluta quis.</p>
-            </div>
-            <div class="feature-item">
-                <img src="imgs/cat2.jpg" alt="">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam facilis dolorem, tempore iure cumque dolore dolores eaque soluta quis.</p>
-            </div>
-            <div class="feature-item">
-                <img src="imgs/cat3.jpg" alt="">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam facilis dolorem, tempore iure cumque dolore dolores eaque soluta quis.</p>
-            </div>
-            <div class="feature-item">
-                <img src="imgs/cat4.jpg" alt="">
-                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam facilis dolorem, tempore iure cumque dolore dolores eaque soluta quis.</p>
-            </div>
+      <h1>tính năng tiện lợi</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum
+        itaque necessitatibus ea adipisci optio provident, exercitationem
+        architecto accusamus odit maiores harum rerum quam eveniet distinctio.
+      </p>
+      <div id="feature-list">
+        <div class="feature-item">
+          <img src="imgs/cat1.jpg" alt="Picture of a cat" />
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam
+            tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam
+            facilis dolorem, tempore iure cumque dolore dolores eaque soluta
+            quis.
+          </p>
         </div>
+        <div class="feature-item">
+          <img src="imgs/cat2.jpg" alt="Another picture of a cat" />
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam
+            tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam
+            facilis dolorem, tempore iure cumque dolore dolores eaque soluta
+            quis.
+          </p>
+        </div>
+        <div class="feature-item">
+          <img src="imgs/cat3.jpg" alt="Another picture of a cat" />
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam
+            tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam
+            facilis dolorem, tempore iure cumque dolore dolores eaque soluta
+            quis.
+          </p>
+        </div>
+        <div class="feature-item">
+          <img src="imgs/cat4.jpg" alt="Another picture of a cat" />
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ullam
+            tempore sit! Culpa expedita eos delectus inventore sit placeat ipsam
+            facilis dolorem, tempore iure cumque dolore dolores eaque soluta
+            quis.
+          </p>
+        </div>
+      </div>
     </div>
     <!-- End of Our features -->
 
     <!-- Download app -->
     <div id="download-app">
-        <p>TẢI APP NGAY ĐỂ TRẢI NGHIỆM TÍNH NĂNG TIỆN LỢI</p>
-        <button></button>
+      <p>TẢI APP NGAY ĐỂ TRẢI NGHIỆM TÍNH NĂNG TIỆN LỢI</p>
+      <button id="second-button">
+        TẢI APP NGAY
+        <span class="icon"><i class="fa-brands fa-android"></i></span>
+        <span class="icon"><i class="fa-brands fa-apple"></i></span>
+      </button>
     </div>
-    <script src="https://kit.fontawesome.com/c498f18423.js" crossorigin="anonymous"></script>
-</body>
+    <!-- End of Download app -->
+
+    <!-- Application -->
+    <div id="application">
+      <h1>ứng dụng</h1>
+      <p id="description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+        doloremque ratione! Earum soluta harum quidem quia unde maxime voluptate
+        dolorem magni numquam! Aperiam quidem quaerat sequi odit. Nihil, veniam
+        dolorem.
+      </p>
+      <div id="application-list">
+        <div class="application-item">
+          <img src="imgs/cat5.jpg" alt="Another picture of a cat" />
+          <h2>Bước 1: cài đặt ứng dụng app</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at aut
+            ad, vel reprehenderit repellendus delectus amet. Cum doloremque
+            exercitationem ipsa! Aperiam accusantium expedita rem, harum ab esse
+            sequi minus.
+          </p>
+        </div>
+        <div class="application-item">
+          <img src="imgs/cat6.jpg" alt="Another picture of a cat" />
+          <h2>Bước 2: đăng ký/ đăng nhập</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at aut
+            ad, vel reprehenderit repellendus delectus amet. Cum doloremque
+            exercitationem ipsa! Aperiam accusantium expedita rem, harum ab esse
+            sequi minus.
+          </p>
+        </div>
+        <div class="application-item">
+          <img src="imgs/cat7.jpg" alt="Another picture of a cat" />
+          <h2>Bước 3: sử dụng dịch vụ</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at aut
+            ad, vel reprehenderit repellendus delectus amet. Cum doloremque
+            exercitationem ipsa! Aperiam accusantium expedita rem, harum ab esse
+            sequi minus.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of Application -->
+
+    <!-- Feedback -->
+    <div id="feedback"></div>
+
+    <script
+      src="https://kit.fontawesome.com/c498f18423.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
